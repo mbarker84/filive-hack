@@ -1,0 +1,408 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline; }
+
+html {
+  line-height: 1; }
+
+ol, ul {
+  list-style: none; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle; }
+
+q, blockquote {
+  quotes: none; }
+  q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none; }
+
+a img {
+  border: none; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/* Colours */
+/* Break Points */
+/* Fonts */
+h1, h2 {
+  font-family: VanCondensedPro;
+  text-transform: uppercase;
+  line-height: 1.1;
+  margin-bottom: 1em; }
+
+h1 {
+  font-size: 2em;
+  margin-top: 1em; }
+
+h2 {
+  font-size: 1.5em; }
+
+p {
+  font-family: "chaparral-pro", sans-serif;
+  line-height: 1.5333;
+  margin-bottom: 1em; }
+  p:last-of-type {
+    margin-bottom: 3em; }
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*, body {
+  position: relative; }
+
+a {
+  text-decoration: none;
+  color: #00adef; }
+
+header {
+  overflow: hidden;
+  *zoom: 1; }
+
+.site-menu {
+  position: fixed;
+  top: 0;
+  right: 0;
+  font-family: VanCondensedPro;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  padding: 1.5em .75em;
+  background-color: #000000;
+  z-index: 1000; }
+  .site-menu a {
+    color: #FFFFFF; }
+
+a.early-bird-head {
+  width: 73.68421%;
+  float: right;
+  margin-right: 0;
+  text-align: center;
+  font-family: VanCondensedPro;
+  font-size: 1.2em;
+  color: #FFFFFF;
+  text-transform: uppercase;
+  background-color: #00adef;
+  padding: 1em;
+  height: 2.8em; }
+
+.site-logo {
+  width: 21.05263%;
+  float: left;
+  margin-right: 5.26316%; }
+  .site-logo .site-logo__text {
+    display: none; }
+  .site-logo svg {
+    fill: #00adef; }
+
+.grid {
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  *zoom: 1;
+  padding: 1em; }
+  .grid:after {
+    content: " ";
+    display: block;
+    clear: both; }
+
+img.arrow {
+  display: none; }
+
+/* Mobile styles */
+.page-head--desktop {
+  display: none; }
+
+.grid-item--60 {
+  text-align: center; }
+
+a.site-logo {
+  text-align: center; }
+  a.site-logo svg {
+    max-width: 3em;
+    display: block;
+    margin: .5em 1em 3em .5em; }
+  a.site-logo h1.site-logo__text {
+    display: block;
+    width: 100vw;
+    text-align: center;
+    font-family: "proxima-nova-alt", sans-serif;
+    font-weight: 700;
+    font-size: 1.5em;
+    margin: 0 auto; }
+
+h1.headline-intro__details__title {
+  margin: 0; }
+
+h1.headline-intro__details__title, h2.dates {
+  text-align: center; }
+  h1.headline-intro__details__title span, h2.dates span {
+    display: block; }
+
+ul.headline-intro__list {
+  font-family: "chaparral-pro", sans-serif;
+  font-weight: 700;
+  margin-bottom: 1em;
+  margin-left: 1em;
+  text-align: left; }
+  ul.headline-intro__list li {
+    margin-bottom: .8em; }
+    ul.headline-intro__list li:last-child {
+      margin-bottom: 0; }
+    ul.headline-intro__list li::before {
+      content: url(../img/star.png);
+      margin-right: 1em;
+      display: block;
+      float: left; }
+
+/* Form */
+form {
+  border-top: 1px solid #000000;
+  padding-top: 2em;
+  font-family: "chaparral-pro", sans-serif; }
+  form label.hidden {
+    display: none; }
+  form input.form-field {
+    display: block;
+    width: 100%;
+    padding: .8em;
+    font-size: 1em;
+    font-family: "chaparral-pro", sans-serif;
+    margin-bottom: 1em;
+    color: #CCCCCC;
+    border: 1px solid #CCCCCC;
+    border-radius: .2em; }
+
+.label--select {
+  display: inline-block;
+  float: left;
+  padding-top: 1em; }
+
+.form-field--select {
+  display: inline-block;
+  float: left;
+  width: 50%;
+  padding: .8em;
+  height: 40px;
+  margin: 0 1em 2em 1em;
+  background-color: #CCCCCC;
+  border-radius: 0;
+  border: none; }
+
+.form-button--submit {
+  display: block;
+  width: 100%;
+  clear: both;
+  height: 40px;
+  background-color: #000000;
+  color: #FFFFFF;
+  font-family: VanCondensedPro;
+  font-size: 1em;
+  text-transform: uppercase;
+  border-radius: 0;
+  border: none; }
+  .form-button--submit:focus, .form-button--submit:hover {
+    background-color: #00adef; }
+
+/* Tablet styles */
+@media (min-width: 720px) {
+  header {
+    height: auto; }
+
+  .grid {
+    padding: 2em; }
+
+  .page-head--mobile {
+    display: none; }
+
+  .page-head--desktop {
+    display: block;
+    padding-top: 0; }
+
+  .headline-intro__logo {
+    display: block; }
+
+  a.early-bird-head {
+    width: 47.36842%;
+    float: right;
+    margin-right: 0; }
+
+  a.site-logo {
+    width: 47.36842%;
+    float: left;
+    margin-right: 5.26316%;
+    height: auto;
+    text-align: left; }
+    a.site-logo svg {
+      display: inline-block;
+      float: left;
+      margin-bottom: 0; }
+    a.site-logo h1.site-logo__text {
+      margin-top: .5em;
+      font-size: 1.3em; }
+    a.site-logo span {
+      display: block;
+      text-align: left; }
+
+  p, ul {
+    font-size: 1.2em; }
+
+  img.headline-intro__image {
+    width: 47.36842%;
+    float: left;
+    margin-right: 5.26316%; }
+
+  h1.headline-intro__details__title {
+    width: 47.36842%;
+    float: right;
+    margin-right: 0;
+    text-align: left;
+    font-size: 3em;
+    margin-top: 1.5em;
+    margin-bottom: .5em; }
+
+  h2.dates {
+    text-align: left; }
+    h2.dates span {
+      display: block; }
+
+  section {
+    text-align: left; }
+    section.first {
+      clear: both; }
+
+  .form .signup-title {
+    width: 21.05263%;
+    float: left;
+    margin-right: 5.26316%; }
+  .form fieldset {
+    width: 73.68421%;
+    float: right;
+    margin-right: 0; }
+
+  .form-button--submit {
+    display: inline-block;
+    width: 8em; } }
+/* Desktop styles */
+@media (min-width: 900px) {
+  a.site-logo {
+    width: 31.03448%;
+    float: left;
+    margin-right: 3.44828%; }
+
+  a.early-bird-head {
+    width: 31.03448%;
+    float: left;
+    margin-right: 3.44828%;
+    font-size: 1.3em; }
+
+  .site-menu {
+    font-size: 1.3em; }
+
+  h2.dates {
+    line-height: 1.3; }
+
+  img.headline-intro__image {
+    width: 31.03448%;
+    float: left;
+    margin-right: 3.44828%; }
+
+  h1.headline-intro__details__title {
+    width: 65.51724%;
+    float: right;
+    margin-right: 0;
+    margin-top: .5em; }
+    h1.headline-intro__details__title span {
+      display: block; }
+
+  section.first, section.second {
+    width: 65.51724%;
+    float: right;
+    margin-right: 0;
+    margin-left: 31.03448%; }
+
+  section.first {
+    margin-top: -1em; }
+
+  section.form-signup {
+    clear: both; }
+    section.form-signup img.arrow {
+      width: 13.7931%;
+      float: left;
+      margin-right: 3.44828%;
+      margin-left: 13.7931%;
+      margin-top: -5em;
+      display: block; }
+    section.form-signup .form {
+      width: 65.51724%;
+      float: right;
+      margin-right: 0; } }
+/* XL styles */
+@media (min-width: 1200px) and (min-width: 1300px) {
+  .site-menu {
+    margin-right: 6.77966%; } }
+@media (min-width: 1200px) {
+  a.site-logo {
+    width: 40.67797%;
+    float: left;
+    margin-right: 1.69492%; }
+
+  a.early-bird-head {
+    width: 23.72881%;
+    float: left;
+    margin-right: 1.69492%; }
+
+  img.headline-intro__image {
+    width: 40.67797%;
+    float: left;
+    margin-right: 1.69492%; }
+
+  h1.headline-intro__details__title {
+    width: 57.62712%;
+    float: right;
+    margin-right: 0;
+    margin-top: 2.5em; }
+
+  section.first, section.second {
+    width: 57.62712%;
+    float: right;
+    margin-right: 0;
+    margin-left: 40.67797%; }
+
+  section.first {
+    margin-top: 0; }
+
+  section.form-signup .form {
+    width: 66.10169%;
+    float: right;
+    margin-right: 0; }
+  section.form-signup img.arrow {
+    width: 15.25424%;
+    float: left;
+    margin-right: 1.69492%;
+    margin-left: 15.25424%; } }
