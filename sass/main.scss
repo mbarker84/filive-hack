@@ -123,6 +123,7 @@ h1.headline-intro__details__title, h2.dates {
 ul.headline-intro__list {
     font-family: $paragraph;
     font-weight: 700;
+    line-height: 1.5333;
     margin-bottom: 1em;
     margin-left: 1em;
     text-align: left;
@@ -142,6 +143,15 @@ ul.headline-intro__list {
 
 /* Form */
 
+#mc_embed_signup, #mc_embed_signup_scroll {
+    @include clearfix;
+}
+
+span.asterisk {
+    color: red;
+    font-size: 1.4em;
+}
+
 form {
     border-top: 1px solid $black;
     padding-top: 2em;
@@ -156,6 +166,7 @@ form {
         font-size: 1em;
         font-family: $paragraph;
         margin-bottom: 1em;
+        margin-top: .5em;
         color: $lt-grey;
         border: 1px solid $lt-grey;
         border-radius: .2em;
@@ -179,9 +190,8 @@ form {
 }
 .form-button--submit {
     display: block;
-    width: 100%;
+    padding: .8em 1.2em;
     clear: both;
-    height: 40px;
     background-color: $black;
     color: $white;
     font-family: $header;
@@ -192,6 +202,10 @@ form {
     &:focus, &:hover {
         background-color: $blue;
     }
+}
+.indicates-required {
+    margin-bottom: 1em;
+    font-weight: 700;
 }
 
 /* Tablet styles */
@@ -385,11 +399,18 @@ form {
     
     section.form-signup {
         .form {
-            @include span(8 of 12 last);
+            @include clearfix;
+            @include span(9 of 12 last);
+            .signup-title {
+                @include span(2 of 9);
+            }
+            fieldset {
+                @include span(7 of 9 last);
+            }
         }
         img.arrow {
             @include span(2 of 12);
-            margin-left: span(2);
+            margin-left: span(1);
         }
     }
     

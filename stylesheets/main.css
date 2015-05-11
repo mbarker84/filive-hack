@@ -167,6 +167,7 @@ h1.headline-intro__details__title, h2.dates {
 ul.headline-intro__list {
   font-family: "chaparral-pro", sans-serif;
   font-weight: 700;
+  line-height: 1.5333;
   margin-bottom: 1em;
   margin-left: 1em;
   text-align: left; }
@@ -181,6 +182,14 @@ ul.headline-intro__list {
       float: left; }
 
 /* Form */
+#mc_embed_signup, #mc_embed_signup_scroll {
+  overflow: hidden;
+  *zoom: 1; }
+
+span.asterisk {
+  color: red;
+  font-size: 1.4em; }
+
 form {
   border-top: 1px solid #000000;
   padding-top: 2em;
@@ -194,6 +203,7 @@ form {
     font-size: 1em;
     font-family: "chaparral-pro", sans-serif;
     margin-bottom: 1em;
+    margin-top: .5em;
     color: #CCCCCC;
     border: 1px solid #CCCCCC;
     border-radius: .2em; }
@@ -216,9 +226,8 @@ form {
 
 .form-button--submit {
   display: block;
-  width: 100%;
+  padding: .8em 1.2em;
   clear: both;
-  height: 40px;
   background-color: #000000;
   color: #FFFFFF;
   font-family: VanCondensedPro;
@@ -228,6 +237,10 @@ form {
   border: none; }
   .form-button--submit:focus, .form-button--submit:hover {
     background-color: #00adef; }
+
+.indicates-required {
+  margin-bottom: 1em;
+  font-weight: 700; }
 
 /* Tablet styles */
 @media (min-width: 720px) {
@@ -398,11 +411,21 @@ form {
     margin-top: 0; }
 
   section.form-signup .form {
-    width: 66.10169%;
+    overflow: hidden;
+    *zoom: 1;
+    width: 74.57627%;
     float: right;
     margin-right: 0; }
+    section.form-signup .form .signup-title {
+      width: 20.45455%;
+      float: left;
+      margin-right: 2.27273%; }
+    section.form-signup .form fieldset {
+      width: 77.27273%;
+      float: right;
+      margin-right: 0; }
   section.form-signup img.arrow {
     width: 15.25424%;
     float: left;
     margin-right: 1.69492%;
-    margin-left: 15.25424%; } }
+    margin-left: 6.77966%; } }
